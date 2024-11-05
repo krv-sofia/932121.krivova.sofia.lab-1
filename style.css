@@ -1,0 +1,148 @@
+* {
+    font-family: 'Arial';
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header, footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+}
+
+header {
+    font-family: 'Courier New';
+}
+
+main {
+    max-width: 500px;
+    padding: 20px;
+    padding-bottom: 0;
+    background-color: blue;
+}
+
+main > * {
+    margin-bottom: 10px;
+}
+
+.square {
+    margin: 20px;
+    margin-top: 0;
+    margin-left: 0;
+    float: left;
+    width: 100px;
+    height: 100px;
+    border: 4px solid white;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.text {
+    font-size: 16px;
+}
+
+a {
+    width: 100%;
+    display: inline-block;
+    color: red;
+    text-align: center;
+}
+
+ul {
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 10px;;
+}
+
+li:nth-child(2) {
+    letter-spacing: 5px;
+    color: aqua;
+}
+
+h2 {
+    word-spacing: 12px;
+}
+
+h2 span {
+    color: red;
+}
+
+h3 {
+    margin: 0;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left-bottom p:last-child {
+    margin-top: 10px;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.right-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.rect { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 3px;
+    border: 1px solid white;
+    padding: 3px;
+}
+
+.rect > div {
+    min-width: 40px;
+    min-height: 30px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 2px;
+    text-align: center;
+}
+
+.rect > div:first-child {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: green;
+}
+
+.rect > div:last-child {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-color: red;
+}
